@@ -5,6 +5,21 @@
 body{
     overflow-x: hidden;
 }
+h1{
+    color: white;
+    background-color: green;
+    width: 50%;
+    padding-left: 10px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 5px;
+}
+.nav-logo{
+    color: white;
+}
+.logo{
+    padding-bottom: 5px;
+}
 .navbar{
     background-color: grey;
 }
@@ -46,7 +61,30 @@ img{
     width: 100%;
 }
 .menuitems {
-   display: none;
+   /* display: none; */
+   position: absolute;
+   top: 57px;
+   left: 5px;
+   background: white;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   height: 0;
+   overflow-y: hidden;
+   
+}
+.show-nav-dropdown{
+    height: max-content;
+}
+.menuitems img{
+    width: 2%;
+   float: right;
+}
+.menuitems a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px;
+    border-bottom: 1px solid;
 }
 .menu-button{
     margin-right: 5px;
@@ -67,7 +105,7 @@ img{
     /* float: right; */
 }
 .hamburger{
-    padding-top: 10px;
+    padding-top: 15px;
     display: grid;
     justify-content: flex-end;
 
@@ -163,7 +201,7 @@ img{
     text-align: center;
 }
 .review p{
-    font-size: large;
+    font-size: 3.5vw;
     padding-top: 20px;
 }
 .review h5{
@@ -237,12 +275,12 @@ img{
    margin-bottom: 20px;
 }
 .pos p{
-    font-size: large;
+    font-size: 3.5vw;
     margin-bottom: 20px;
 }
 a{
     color: blue;
-    font-size: 2vx;
+    font-size: 2vw;
     font-weight: bold;
 }
 .content-three{
@@ -252,7 +290,7 @@ a{
     text-align: center;
 }
 .content-three p{
-    font-size: large;
+    font-size: 3.5vw;
     padding: 20px 0;
 }
 .content-three h5{
@@ -276,7 +314,7 @@ a{
     flex-direction: column-reverse ;
 }
 .yellow-brick,.linen-house p{
-    font-size: 2vh;
+    font-size: 3.5vw;
     padding-top: 10px;
     text-align: center;
 }
@@ -361,7 +399,7 @@ svg{
     padding: 30px 0;
 }
 .heading p{
-    font-size: 2.2vh;
+    font-size: 3.5vw;
     text-align: center;
     margin-top: -70px;
 }
@@ -739,6 +777,15 @@ svg{
         max-width: 100%;
         grid-template-columns:auto auto auto ;
     }
+    h1{
+        color: white;
+        background-color: green;
+        width: 80%;
+        padding-left: 10px;
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+        margin-top: 10px;
+    }
     .hamburger{
         display: none;
     }
@@ -753,17 +800,29 @@ svg{
         padding: 5px 5px
     }
     .menuitems{
-        display: block;
-        margin-top: 20px;
+        /* display: block;*/
+        margin-top: 10px;
+        position: unset;
+        /* top: 67px; */
+        background: transparent;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: auto;
+        gap: 20px;
     }
     .menuitems img{
         width: 15px;
+        padding-top: 5px;
     }
     .menuitems a{
         text-decoration: none;
         color: white;
         font-size: 1.5vw;
         padding-right: 5px;
+        border-bottom: none;
        
     }
     .menu-button{
@@ -997,7 +1056,7 @@ svg{
         position: absolute;
         z-index: 0;
         transform: translate(40%, 5%);
-        top: 1150px;
+        top: 1350px;
         /* left: 350px; */
         
     }
