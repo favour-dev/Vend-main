@@ -255,7 +255,7 @@ img{
 .timeline li:after {
 	display: inline-block;
 	content: attr(data-text);
-	font-size: 10px;
+	font-size: 7px;
     font-weight: bold;
 	position: absolute;
 	/* left: 10%; */
@@ -883,7 +883,7 @@ svg{
 /* Desktop */
 @media (min-width:1024px){
     .container-content{
-        /* width: 100%; */
+        width: 80%;
         margin: 0 auto;
         max-width: 100%;
         /* border: 2px solid ; */
