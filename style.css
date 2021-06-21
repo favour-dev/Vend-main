@@ -8,10 +8,10 @@ body{
 h1{
     color: white;
     background-color: green;
-    width: 50%;
+    width: 70%;
     padding-left: 10px;
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
     margin-top: 5px;
 }
 .nav-logo{
@@ -404,9 +404,9 @@ svg{
     border-bottom-right-radius: 140px;
     margin-top: 20px;
     padding-top: 40px;
-    border-bottom-left-radius:15px ;
+    /* border-bottom-left-radius:15px ; */
     border-top-left-radius: 140px;
-    border-top-right-radius: 15px;
+    /* border-top-right-radius: 15px; */
    
 }
 .heading h5{
@@ -617,9 +617,9 @@ span img{
     background-color:rgb(212, 194, 171);
     margin: 30px 0;
     border-bottom-right-radius: 70px;
-    border-bottom-left-radius:15px ;
+    /* border-bottom-left-radius:15px ; */
     border-top-left-radius: 70px;
-    border-top-right-radius: 15px;
+    /* border-top-right-radius: 15px; */
 }
 .content-14-2{
     display: flex;
@@ -1460,7 +1460,7 @@ footer{
         margin: 0 auto;
         /* position: absolute; */
         z-index: 0;
-        transform: translate(65%, 50%);
+        transform: translate(55%, 10%);
         /* top: 1350px; */
         /* left: 350px; */
         
@@ -1484,9 +1484,9 @@ footer{
         display: none;
     }
     .pos-machine{
-       transform: translate(4%);
-       margin-top:-100px ;
-       width: 95%;
+       transform: translate(40%);
+       margin-top:-180px ;
+       width: 75%;
     }
     .content-five{
         width: 80%;
@@ -1855,5 +1855,13 @@ footer{
     }
     .select-region{
         padding: 10px 15px;
+    }
+    .footer-last2{
+        background: #3a4953;
+        opacity: 0.9;  
+        text-align: center;
+    }
+    .hm{
+        padding: 10px 0;
     }
 }
