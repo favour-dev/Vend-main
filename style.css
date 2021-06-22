@@ -376,7 +376,7 @@ a{
     margin: 0 auto;
     position: absolute;
     z-index: 0;
-    transform: translate(10%, -95%);
+    transform: translate(10%, -62%);
     top: 1520px;
     left: 90px;
     
@@ -398,7 +398,7 @@ video{
     z-index: 2;
 } */
 .pos-machine{
-   transform: translate(4%);
+   transform: translate(13%, 17%);
    margin-top:-80px ;
 }
 /* section five */
