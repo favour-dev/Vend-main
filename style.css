@@ -1498,7 +1498,7 @@ footer{
         margin: 0 auto;
         /* position: absolute; */
         z-index: 0;
-        transform: translate(10%, -15%);
+        transform: translate(10%, 30%);
         /* top: 1350px; */
         /* left: 350px; */
         
@@ -1939,7 +1939,7 @@ footer{
     }
 }
 @media(min-width:1536px){
-    .container{
+    .container-content{
         max-width: 1536px;
     }
 }
