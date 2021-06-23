@@ -26,7 +26,8 @@ h1{
     font-weight: bold;
 }
 .navbar{
-    background-color: rgb(6, 77, 6);
+    /* background-color: rgb(6, 77, 6); */
+    background-color: #3a4953;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -224,11 +225,13 @@ img{
     padding-top: 20px;
     text-align: justify;
     padding: 20px 10px 0 10px;
+    
 }
 .review h5{
     font-size: x-large;
     color: rgb(6, 6, 43);
     padding: 0 10px;
+    /* font-family: 'Cormorant Garamond', serif; */
 }
 /* .rectangle{
     position: sticky;
@@ -297,7 +300,9 @@ img{
 }
 .pos h5{
    font-size: x-large;
+   padding-bottom: 20px;
    margin-bottom: 20px;
+   /* font-family: 'Kaushan Script', cursive; */
 }
 .pos p{
     font-size: 3.5vw;
@@ -759,7 +764,7 @@ span img{
 }
 /* footer */
 .footer-mobile{
-    background-color: #3a4953;
+    background-color: #3e79a0;
 }
 .footer-items{
     display: grid;
@@ -1573,7 +1578,7 @@ footer{
     }
     .content-seven p{
         font-size: 3.5vh;
-        padding: 10px 0;
+        padding: 70px 0 10px 0;
         margin: 20px 0;
         text-align: justify;
     }
@@ -1857,6 +1862,7 @@ footer{
         font-size: 3.5vh;
         width: 50%;
         margin: 0 auto;
+        padding-bottom: 50px;
     }
     .content-18{
         display: grid;
@@ -1916,6 +1922,7 @@ footer{
     .hm{
         padding: 10px 0;
     }
+   
 }
 
 @media(min-width:640px){
