@@ -5,44 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Kaushan+Script&family=Righteous&display=swap" rel="stylesheet"><body>
+    <link rel="stylesheet" href="./Styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
     <div id="main">
         <div class="navbar">
             <div class="container">
-                <div class="logo">
-                    <h1>VEND.</h1>
-                    <p class="nav-logo">by Lightspeed</p>              
+                <div class="left-nav-container">
+                    <div class="logo">
+                        <img src="./images/vend-tag-logo.svg" alt="">
+                        <p class="nav-logo">by Lightspeed</p>              
+                    </div>
+                    <div id="drop" class="menuitems">
+                        <a href="#">WhyVend</a><span> <img src="./images/arrow-down.png"></span>
+                        <a href="#">Features</a><span> <img src="./images/arrow-down.png"></span>
+                        <a href="#">Outlets</a>
+                        <a href="#">Enterprise</a>
+                        <a href="#">Resources</a><span><img src="./images/arrow-down.png"></span>
+                        <a href="#">Demo</a><span><img src="./images/arrow-down.png"></span>
+                        <a href="#">Pricing</a>
+                    </div>
                 </div>
-                <div id="drop" class="menuitems">
-                    <a href="#">Why Vend<span><img src="./images/arrow.png"></span></a>
-                    <a href="#">Features<span><img src="./images/arrow.png"></span></a>
-                    <a href="#">Multioutlets</a>
-                    <a href="#">Enterprise</a>
-                    <a href="#">Resources<span><img src="./images/arrow.png"></span></a>
-                    <a href="#">Demo<span><img src="./images/arrow.png"></span></a>
-                    <a href="#">Pricing</a>
-                </div>
-                <div class="menu-button">
-                    <button class="contact">Contact Sales</button>
-                    <button class="free">Free Trial</button>
-                </div>
-                <div class="menu">
-                    <p>MENU</p>
-                </div>
-                <div id="icon" class="hamburger" onclick="dropitems()">
-                    <img src="./images/Hamburger.svg">
+                <div class="right-nav-container">
+                    <div class="menu-button">
+                        <button class="contact">Contact Sales</button>
+                        <button class="free">Free Trial</button>
+                    </div>
+                    <div id="icon" class="hamburger" onclick="dropitems()">
+                        <p>MENU</p>
+                        <img src="./images/Hamburger.svg">
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Body -->
-        
+        <div class="container-content">
+   
             <div class="section-one">
                 <div class="image-frame">
                     <img class="desk-img" src="./images/Frame-1-1.png" alt="" srcset="">
                     <img class="mobile-img" src="./images/Frame-2.png" alt="retail">
                 </div>
                 <div class="retail">
-                    <h2>Upgrade your retail store for tomorrow</h2>
+                    <h1>Upgrade your retail store for tomorrow</h1>
                     <p class="desktop-upgrade">Covid-19 is affecting retail globally. it's more important than ever to have an omni-channel retail business. Prepare for the retail resurgence with Vend.</p>
                     <button class="try">Try vend for free</button>
                     <p class="mobile-upgrade">Covid-19 is affecting retail globally. it's more important than ever to have an omni-channel retail business. Prepare for the retail resurgence with Vend.</p>
@@ -57,7 +65,6 @@
                     <p class="mobile-multistore">Running a retail business across multiple outlets is challenging. Find out how Vend can help your business increase efficency and profitablilty.</p>
                 </div>
             </div>
-        <div class="container-content">
             <div class="section-two">
                 <div class="content-two">
                    <div class="star">
@@ -117,22 +124,11 @@
                     </div>
                 </div>
                 <div class="pos-images">
-                    <div class="macbook">
-                        <img src="./images/macbook.svg" alt="hi" srcset="">
-                    </div>
-                    <div class="ipad">
-                        <img src="https://corp.vendcdn.com/home/product-feature/POS-Image1-ipad_200109_001520.svg" alt="" srcset="">
-                    </div>
-                    <!-- <div class="video-gif">
-                        <video src="./images/POS-Video_200109_001521.mp4" autoplay></video>
-                    </div> -->
-                
-                    <!-- <svg viewBox="0 0 419 249"xmlns="http://www.w3.org/2000/svg">
-                        <path d="M419 249V0L225.03 163.368C159.213 218.808 80.76 249 0 249H419Z"></path>
-                    </svg>  -->
-                    <div class="pos-machine">
-                        <img src="https://corp.vendcdn.com/home/product-feature/Step1-Image2-payments.svg" alt="" srcset="">
-                    </div>
+                        <img src="./images/macbook.svg" alt="hi" class="side-laptop">
+                        <img src="https://corp.vendcdn.com/home/product-feature/POS-Image1-ipad_200109_001520.svg" alt="" class="ipad">              
+                        <video class="ipad-video" src="./images/POS-Video_200109_001521.mp4" autoplay></video>
+                        <img src="https://corp.vendcdn.com/home/product-feature/Step1-Image2-payments.svg" alt="" class="pos-hand">
+                   
                 </div>
 
                 <div class="section-three">
@@ -167,9 +163,9 @@
                     <div class="content-five">
                         <div class="heading">
                             <h5>Powerful inventory management to help maximize your profits.</h5>
-                            <div class="laptop">
-                                <img src="https://corp.vendcdn.com/home/product-feature/Inventory-Image1-macbook_200109_003117.svg" alt="">
-                            </div>
+                            <!-- <div class="laptop"></div> -->
+                                <img class="laptop"src="https://corp.vendcdn.com/home/product-feature/Inventory-Image1-macbook_200109_003117.svg" alt="">
+                            <!-- </div> -->
                             <div class="inventory">
 
                                 <p>Manage inventory across multiple outlets with a centralised product catalog, accessible from your POS, back-office, or on the road
@@ -226,6 +222,9 @@
                         <p>Vend makes it easy to add new outlets and registers as your business grows. All of Vend’s key features including POS, inventory, and reporting are designed for multiple outlets so your business operates as one cohesive operation. Ecommerce integrations support fulfilment from any store.</p>
                         <a href="http://">See how Vend works for retailers with multiple outlets </a>
                     </div>
+                    <!-- <svg class="bg-svg" viewBox="0 0 419 249" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M419 249V0L225.03 163.368C159.213 218.808 80.76 249 0 249H419Z"></path>
+                    </svg> -->
                 </div>
                 <div class="section-eight">
                     <div class="content-eight">
@@ -257,7 +256,7 @@
                         <div class="left-content-nine">
                             <img src="./images/Reporting-Image1-dashboard_200109_003239.png" alt="">
                         </div>
-                        <div class="right-content-nine">
+                  `      <div class="right-content-nine">
                             <p>Vend takes the guesswork out of decision-making with powerful sales and inventory reporting that’s live and accurate to the minute. Help increase profitability with key retail metrics including sales, inventory levels, sell-through rates, margin and more. Access reports 24/7 from anywhere.</p>
                         <a href="http://">See how Vend works for retailers with multiple outlets </a>
                         </div>
@@ -281,18 +280,10 @@
                     <div class="section-11">
                         <div class="content-11">
                             <div class="top-images">
-                                <div class="image1">
-                                    <img src="./images/Ecommerce-Image1-shoe_200109_003257.svg" alt="" srcset="">
-                                </div>
-                                <div class="image2">
-                                    <img class="special" src="./images/Ecommerce-Image2-iphone_200109_003258.svg" alt="" srcset="">
-                                </div>
-                                <div class="image3">
-                                    <img src="./images/Ecommerce-Image3-ipad_200109_003258.svg" alt="" srcset="">
-                                </div>
-                                <div class="image4">
-                                    <img src="./images/Ecommerce-Image4-macbook_200109_003256.svg" alt="" srcset="">
-                                </div>
+                                    <img class="image1"src="./images/Ecommerce-Image1-shoe_200109_003257.svg" alt="" srcset="">
+                                    <img class="image2" src="./images/Ecommerce-Image2-iphone_200109_003258.svg" alt="" srcset="">
+                                    <img class="image3"src="./images/Ecommerce-Image3-ipad_200109_003258.svg" alt="" srcset="">
+                                    <img class="image4"src="./images/Ecommerce-Image4-macbook_200109_003256.svg" alt="" srcset="">
                             </div>
                             <div class="writings">
                                 <h5>Be everywhere with a choice of ecommerce integrations.</h5>
@@ -426,11 +417,11 @@
                     <div class="section-15">
                         <div class="content-15">
                             <img src="./images/DemoVideo-PreviewImage1_200109_005438.jpg" alt="" srcset="">
-                            <div class="c-play-button__icon">
+                            <div id="play-button">
                                 <svg width="32" height="41" viewBox="0 0 32 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M2.726 40.3694l27.9893-18.1455c1.1652-.7559 1.1659-2.676.0013-3.4326L2.7274.6086C1.577-.139.151.8117.151 2.3242v36.3282c0 1.5124 1.4248 2.4624 2.575 1.717" fill-rule="nonzero"></path>
                                 </svg>
-                              </div>
+                            </div>
                             <div class="bottom-text">
                                 <h5>Discover how easy it is to transform your retail business with Vend</h5>
                                 <p>Watch our demo to see why Vend is perfect for inventory based retailers like you.</p>
@@ -521,13 +512,13 @@
                     <footer>
                         <div class="footer-mobile">
                             <div class="footer-items">
-                                <a href="#">Company<span><img src="./images/arrow.png"></span></a>
-                                <a href="#">Help and Support<span><img src="./images/arrow.png"></span></a>
-                                <a href="#">Programs<span><img src="./images/arrow.png"></span></a>
-                                <a href="#">Follow Us<span><img src="./images/arrow.png"></span></a>
-                                <a href="#">Retail Resources<span><img src="./images/arrow.png"></span></a>
-                                <a href="#">The Best of Retail<span><img src="./images/arrow.png"></span></a>
-                                <a href="#">Business Types<span><img src="./images/arrow.png"></span></a>
+                                <a href="#">Company<span><img src="./images/arrow-down.png"></span></a>
+                                <a href="#">Help and Support<span><img src="./images/arrow-down.png"></span></a>
+                                <a href="#">Programs<span><img src="./images/arrow-down.png"></span></a>
+                                <a href="#">Follow Us<span><img src="./images/arrow-down.png"></span></a>
+                                <a href="#">Retail Resources<span><img src="./images/arrow-down.png"></span></a>
+                                <a href="#">The Best of Retail<span><img src="./images/arrow-down.png"></span></a>
+                                <a href="#">Business Types<span><img src="./images/arrow-down.png"></span></a>
                             </div>  
                             <div class="footer-bottom">
                                 <form class="select-region">
@@ -674,7 +665,7 @@
                             </div>
                         </div>
                         <div class="footer-last2">
-                            <div class="hm">
+                            <div class="copyright">
                                 <a href="#">Termofuse</a>
                                 <a href="#">PrivacyPolicy</a>
                                 <a href="#">SiteMap</a>
